@@ -12,6 +12,24 @@
     <!-- De onderstaande regel code gebruikt de WordPress-functie get_stylesheet_uri() om de URL van het huidige thema's style.css-bestand op te halen en dit te koppelen aan het stijlblad van je website. -->
     <link rel="stylesheet" href="<?php echo get_stylesheet_uri(); ?>">
 
+    <style>
+    @keyframes slideIn {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .entry-title {
+      animation: slideIn 0.5s ease-in-out;
+    }
+  </style>
+
 </head>
 
 <body>
@@ -81,6 +99,28 @@
         </div>
     </footer>
 
+    <script>
+  document.addEventListener("DOMContentLoaded", function () {
+    var elements = document.getElementsByClassName("entry-content");
+    var windowHeight = window.innerHeight;
+
+    function checkPosition() {
+      for (var i = 0; i < elements.length; i++) {
+        var element = elements[i];
+        var positionFromTop = elements[i].getBoundingClientRect().top;
+
+        if (positionFromTop - windowHeight <= 0) {
+          element.classList.add("show");
+        }
+      }
+    }
+
+    window.addEventListener("scroll", checkPosition);
+    window.addEventListener("resize", checkPosition);
+
+    checkPosition();
+  });
+</script>
 
 </body>
 

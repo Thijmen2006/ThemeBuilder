@@ -6,127 +6,131 @@ Version: 2.0
 */
 
 body {
-    margin: 0;
-    padding: 0;
-    font-family: Arial, sans-serif;
-    line-height: 1.5;
-    width: 99%;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  line-height: 1.5;
+  width: 99%;
 }
 
 header h1 {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 h1 a {
-    color:white;
-    font-size: 40px;
-    text-decoration: underline;
+  color: black;
+  font-size: 40px;
+  text-decoration: underline;
 }
 
 main {
-    margin-right: 200px;
-    /* Adjust this value to create a gap between the navbar and the content */
-    padding: 20px;
+  margin-right: 200px;
+  /* Adjust this value to create a gap between the navbar and the content */
+  padding: 20px;
 }
 
-
-
 header {
-    margin-left: -9px;
-    margin-right: -9px;
-    margin-top: -22px;
-    width: auto;
-    height: 400px;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-image: url('images/giuseppe-murabito-My1oqpgAf8s-unsplash.jpg');
+  margin-left: -9px;
+  margin-right: -9px;
+  margin-top: -22px;
+  width: auto;
+  height: 400px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url('https://images.pling.com/img/00/00/63/03/06/1653197/bd71f8795d4175541ca99b262f2e883874d9158fd5ca5fb865c3684b7c34027a66e2.jpg');
 }
 
 header nav {
-    text-align: center;
-    position: fixed;
-    right: 0;
-    top: 0;
-    height: 100vh;
-    width: 180px;
-    background: black;
-    color: #fff;
-    opacity: 90%;
+  text-align: center;
+  position: fixed;
+  right: 0;
+  top: 0;
+  height: 100vh;
+  width: 180px;
+  background: #233944;
+  color: #fff;
+  opacity: 90%;
 }
 
 .posts-title {
-    text-decoration: none;
-    color: darkblue;
-    font-size: 20px;
+  text-decoration: none;
+  color: darkblue;
+  font-size: 30px;
 }
 
 .entry-content {
-    border-radius: 10px;
-    border: 1px solid lightgray;
-    color: black;
-    padding: 10px;
-    background-color: #f9f9f9;
-    margin-bottom: 20px;
-    display: flex;
-    align-items: flex-start;
+  border-radius: 10px;
+  border: 1px solid lightgray;
+  color: black;
+  padding: 10px;
+  background-color: #f9f9f9;
+  margin-bottom: 40px;
+  display: flex;
+  align-items: flex-start;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Add box-shadow */
 }
 
+.entry-content:hover {
+  transform: scale(1.02);
+}
+
+
 .entry-content p {
-    margin-bottom: 10px;
+  margin-bottom: 10px;
 }
 
 .entry-content a {
-    color: darkblue;
-    text-decoration: underline;
+  color: darkblue;
+  text-decoration: underline;
 }
 
 .entry-content img {
-    max-width: 100%;
-    height: auto;
-    width: 400vh;
-    margin-bottom: 10px;
-    margin-left: 10px;
+  max-width: 100%;
+  height: auto;
+  width: 400vh;
+  margin-bottom: 10px;
+  margin-left: 10px;
 }
 
 .entry-content blockquote {
-    margin: 0;
-    padding: 10px;
-    background-color: #f5f5f5;
-    border-left: 4px solid #ddd;
+  margin: 0;
+  padding: 10px;
+  background-color: #f5f5f5;
+  border-left: 4px solid #ddd;
 }
 
 .entry-content ul,
 .entry-content ol {
-    margin-top: 10px;
-    margin-bottom: 10px;
-    padding-left: 20px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding-left: 20px;
 }
 
 .entry-content li {
-    margin-bottom: 5px;
+  margin-bottom: 5px;
 }
 
 .entry-content pre {
-    background-color: #f5f5f5;
-    padding: 10px;
-    overflow-x: auto;
-    font-family: Consolas, Monaco, monospace;
-    font-size: 14px;
+  background-color: #f5f5f5;
+  padding: 10px;
+  overflow-x: auto;
+  font-family: Consolas, Monaco, monospace;
+  font-size: 14px;
 }
 
 .entry-content code {
-    font-family: Consolas, Monaco, monospace;
-    font-size: 14px;
-    background-color: #f5f5f5;
-    padding: 2px 4px;
+  font-family: Consolas, Monaco, monospace;
+  font-size: 14px;
+  background-color: #f5f5f5;
+  padding: 2px 4px;
 }
 
+
 footer {
-    background-color: black;
-    width: 100%;
+    background-color:  #233944;
+    width: 101%;
     margin-top: 20px;
     opacity: 80%;
 }
